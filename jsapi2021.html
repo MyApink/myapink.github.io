@@ -96,6 +96,7 @@
     <hr>
     <div class="line">
         <button id="umVideoCall">视频通话<br>umVideoCall</button>
+		<button id="umAlertSheet">展示AlertSheet<br>umAlertSheet</button>
 
     </div>
 
@@ -250,10 +251,11 @@
 
         bindClickAndExec("gaode", 'umGetGDLocation')
 
-
-
         bindClickAndExec("umScan")
         bindClickAndExec("umScanMultiple")
+		
+		//AlertSheet
+		bindClickAndExec("umAlertSheet")
 
         function getImageBase64(img, ext) {
             var canvas = document.createElement("canvas");   //创建canvas DOM元素，并设置其宽高和图片一样
