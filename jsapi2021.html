@@ -2,12 +2,12 @@
 <!-- saved from url=(0048)https://andych008.github.io/jsapi/jsapi2021.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>jsapi测试</title>
-    <link rel="stylesheet" href="./jsapi_files/style.css">
+    <link rel="stylesheet" href="./jsapi测试_files/style.css">
     
 </head>
 
 <body>
-    <h2>轻程序相关(pink)</h2>
+    <h2>轻程序相关</h2>
     <hr>
     <div class="line">
         <button id="umGetSystemInfo">获取平台信息<br>umGetSystemInfo</button>
@@ -96,11 +96,6 @@
     <hr>
     <div class="line">
         <button id="umVideoCall">视频通话<br>umVideoCall</button>
-		<button id="umActionSheet">展示ActionSheet<br>umActionSheet</button>
-		<button id="umToast">展示弱提示弹窗<br>umToast</button>
-		<button id="umInput">展示输入弹窗<br>umInput</button>
-		<button id="umLoading">展示全局加载动画<br>umLoading</button>
-		<button id="umAlert">展示图文弹窗<br>umAlert</button>
 
     </div>
 
@@ -255,20 +250,11 @@
 
         bindClickAndExec("gaode", 'umGetGDLocation')
 
+
+
         bindClickAndExec("umScan")
         bindClickAndExec("umScanMultiple")
-		
-		//Actionheet
-		bindClickAndExec("umActionSheet");
-		//AlertDialog
-		bindClickAndExec("umAlert")
-		//Toast
-		bindClickAndExec("umToast")
-		//input
-		bindClickAndExec("umInput")
-		//Loading animation
-		bindClickAndExec("umLoading")
-		
+
         function getImageBase64(img, ext) {
             var canvas = document.createElement("canvas");   //创建canvas DOM元素，并设置其宽高和图片一样
             canvas.width = img.width;
