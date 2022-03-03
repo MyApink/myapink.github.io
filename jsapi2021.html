@@ -96,7 +96,11 @@
     <hr>
     <div class="line">
         <button id="umVideoCall">视频通话<br>umVideoCall</button>
-		<button id="umAlertSheet">展示AlertSheet<br>umAlertSheet</button>
+		<button id="umActionSheet">展示ActionSheet<br>umAlertSheet</button>
+		<button id="umToast">展示弱提示弹窗<br>umAlertSheet</button>
+		<button id="umInput">展示输入弹窗<br>umAlertSheet</button>
+		<button id="umLoading">展示全局加载动画<br>umAlertSheet</button>
+		<button id="umAlert">展示图文弹窗<br>umAlertSheet</button>
 
     </div>
 
@@ -249,14 +253,23 @@
         bindClickAndExec("umRPCNetwork", api = null, param = {'header':{'Nonce':'5f7e75f75d4570a08adda0065741d366','X-Requested-With':'XMLHttpRequest','operationType':'com.abchina.ditingMobile.login','ReqSource':'ditingMobile'},'reqJson':'{"userName":"wangyaoyfzx","checkCode":"usap1234!()"}','operationType':'com.abchina.ditingMobile.login','timeOut':20000})
 
 
+]=]=]=]=]=]]
         bindClickAndExec("gaode", 'umGetGDLocation')
 
         bindClickAndExec("umScan")
         bindClickAndExec("umScanMultiple")
 		
-		//AlertSheet
-		bindClickAndExec("umAlertSheet")
-
+		//Actionheet
+		bindClickAndExec("umActionSheet");
+		//AlertDialog
+		bindClickAndExec("umAlert")
+		//Toast
+		bindClickAndExec("umToast")
+		//input
+		bindClickAndExec("umInput")
+		//Loading animation
+		bindClickAndExec("umLoading")
+		
         function getImageBase64(img, ext) {
             var canvas = document.createElement("canvas");   //创建canvas DOM元素，并设置其宽高和图片一样
             canvas.width = img.width;
