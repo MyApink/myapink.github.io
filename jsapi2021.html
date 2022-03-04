@@ -101,6 +101,7 @@
 		<button id="umInput">展示输入弹窗<br>umInput</button>
 		<button id="umLoading">展示全局加载动画<br>umLoading</button>
 		<button id="umAlert">展示图文弹窗<br>umAlert</button>
+		<button id="umSetOrientation">切换横竖屏<br>umSetOrientation</button>
 
     </div>
 
@@ -242,6 +243,9 @@
 		bindClickAndExec("umInput")
 		//Loading animation
 		bindClickAndExec("umLoading")
+		
+		//Set orientation
+		bindClickAndExec("umSetOrientation")
 
         bindClickAndExec("umQloudPost",api = null,param = {'path': '/qcloud/api/zh/test-udesk/test/getappid', 'query':'',
   'headers':{
