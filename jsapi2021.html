@@ -102,6 +102,8 @@
 		<button id="umLoading">展示全局加载动画<br>umLoading</button>
 		<button id="umAlert">展示图文弹窗<br>umAlert</button>
 		<button id="umSetOrientation">切换横竖屏<br>umSetOrientation</button>
+		<button id="umOnShakeIt">开始摇一摇<br>umOnShakeIt</button>
+		<button id="umOffShakeIt">关闭摇一摇<br>umOffShakeIt</button>
 
     </div>
 
@@ -225,6 +227,13 @@
 
             return f2;
         }
+		
+		function umShakeItStatusChange(res) {
+            alert(res,'1');
+        }
+		window.umShakeItStatusChange=function umShakeItStatusChange(res) {
+            alert(res,'2');
+        }
 
         bindClickAndExec("umGetSystemInfo")
         bindClickAndExec("umGetUserInfo")
@@ -243,6 +252,12 @@
 		bindClickAndExec("umInput")
 		//Loading animation
 		bindClickAndExec("umLoading")
+		
+		//Start shake it listener
+		bindClickAndExec("umOnShakeIt")
+		//Stop shake it listener
+		bindClickAndExec("umOffShakeIt")
+		
 		
 		//Set orientation
 		bindClickAndExec("umSetOrientation")
